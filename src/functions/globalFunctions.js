@@ -1,4 +1,4 @@
-//this is notworking,not using it
+
 export function randomizeArray(arr) {
   let last = arr.length - 1;
 

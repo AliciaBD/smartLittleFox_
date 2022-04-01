@@ -1,0 +1,454 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+li {
+  list-style: none;
+}
+a:link {
+  text-decoration: none;
+}
+button {
+  font-family: "Acme", sans-serif;
+}
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: white;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+nav {
+  /* border: 1px solid red; */
+  background-color: white;
+}
+nav > ul {
+  /* border: 1px solid blue; */
+  margin: 0px;
+  padding: 5px 10px;
+  display: flex;
+}
+nav > ul > li {
+  /* border: 1px solid blue; */
+  margin-right: 10px;
+}
+nav > ul > li > a:link {
+  padding: 0.5rem 1.5rem;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+nav > ul > li > a {
+  color: #4169e1;
+}
+@media screen and (max-width: 913px) {
+  /* nav > ul > li > a:link {
+    font-size: 8px;
+    color: green;
+  } */
+}
+nav > ul > li > .active-link {
+  color: #ff5d00;
+  text-decoration: underline;
+}
+main {
+  /* border: 1px solid red; */
+  flex-grow: 2;
+}
+main > section {
+  height: 100%;
+}
+main .home {
+  background-color: #ffc54d;
+}
+main .home .bg-image {
+  /* border: 1px solid red; */
+  background: url("https://i.ibb.co/ZSz6C52/homepage-cover-bg.png") no-repeat
+    center;
+  background-size: cover;
+  height: 80%;
+}
+@media screen and (max-width: 415px) {
+  main .home .bg-image {
+    background: url("https://i.ibb.co/BZbr27H/home-cover-image-xs.png")
+      no-repeat center;
+    background-size: cover;
+  }
+}
+/* for ipads */
+@media (min-width: 416px) and (max-width: 913px) {
+  main .home .bg-image {
+    height: 45%;
+  }
+}
+main .home .btn-group {
+  display: flex;
+  justify-content: center;
+}
+main .home .btn-group a {
+  font-family: "Acme", sans-serif;
+}
+main .loading {
+  /* border: 1px solid red; */
+  background-color: #ffc54d;
+  background-image: url("https://i.ibb.co/gdLyzVF/pattern.png");
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .loading h2 {
+  margin: 0;
+  font-family: "Acme", sans-serif;
+  letter-spacing: 2px;
+}
+main .lessons {
+  /* border: 1px solid purple; */
+  background-color: #ffc54d;
+  background-image: url("https://i.ibb.co/gdLyzVF/pattern.png");
+  background-size: 100%;
+}
+main .lessons .lessons-catalog {
+  /* border: 3px solid pink; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+main .lessons-catalog .lessons-catalog--card {
+  /* border: 1px solid green; */
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  transition: all 0.1s ease-in-out;
+}
+@media screen and (max-width: 415px) {
+  main .lessons-catalog .lessons-catalog--card {
+    width: 240px;
+  }
+}
+main .lessons-catalog .lessons-catalog--card:hover {
+  transform: scale(1.06);
+}
+main .lessons-catalog .lessons-catalog--card .card-border {
+  background: #8c69e0;
+  border-radius: 25px;
+  padding: 15px 10px;
+  border: 4px solid #694fa8;
+}
+main .lessons-catalog .lessons-catalog--card:hover > .card-border {
+  box-shadow: 4px 5px #694fa8;
+}
+main .lessons-catalog .lessons-catalog--card .card-bg {
+  background: #baa5ec;
+  padding: 0px;
+  border-radius: 25px;
+  border: 4px solid #694fa8;
+}
+main .lessons-catalog .lessons-catalog--card .card-bg img {
+  width: 100%;
+}
+main .lessons-catalog .lessons-catalog--card .card-title {
+  padding: 5px 10px;
+  margin-top: -12px;
+  background: #f9e104;
+  border: 4px solid #bba903;
+  border-radius: 15px;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+main .lessons-catalog .lessons-catalog--card:hover > .card-title {
+  box-shadow: 4px 5px #bba903;
+}
+main .lesson {
+  /* border: 1px solid yellow; */
+  background-color: #8c69e0;
+  background-image: url("https://i.ibb.co/gdLyzVF/pattern.png");
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .lesson .lesson-content {
+  /* border: 1px solid brown; */
+  width: 55%;
+}
+main .lesson .lesson-content .main {
+  /* border: 1px solid fuchsia; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .lesson .lesson-content .learn .learn-top {
+  /* border: 1px solid fuchsia; */
+  align-self: flex-start;
+  display: flex;
+  margin: 10px;
+}
+main .lesson .lesson-content .learn .learn-main {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main .lesson .lesson-content .card {
+  background-color: #ccf1f1;
+  border: 8px solid #8ae9e9;
+  box-shadow: 4px 8px 0 2px #00b9bc, 8px 14px #543f86;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+}
+main .lesson .lesson-content .card-header {
+  background-color: #ff9f00;
+  border: 4px solid #cc7f00;
+  border-radius: 35px;
+  margin: 0;
+  margin-top: -80px;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
+  align-self: center;
+  font-family: "Acme", sans-serif;
+}
+main .lesson .lesson-content .main .card--lessonended {
+  position: fixed;
+  width: 40%;
+  height: 30vh;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10px;
+  top: 30%;
+}
+main .lesson .lesson-content .main .card--lessonended p {
+  font-size: 1.8rem;
+  margin: 10px;
+  font-weight: 700;
+  color: #00b9bc;
+}
+main .lesson .lesson-content .main .card--lessonended img {
+  /* border: 1px solid red; */
+  width: 100px;
+}
+main .lesson .lesson-content .main .card--lessonended .btns-group {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main
+  .lesson
+  .lesson-content
+  .main
+  .card--lessonended
+  .btns-group
+  button:nth-child(1) {
+  margin-right: 20px;
+}
+main .lesson .lesson-content .learn .learn-main .learn-list {
+  width: 20%;
+  align-items: center;
+  padding: 10px;
+  min-width: 100px;
+}
+main .lesson .lesson-content .learn .learn-main .learn-list button {
+  margin-bottom: 10px;
+}
+main .lesson .lesson-content .learn .learn-main .learn-board-group {
+  /* border: 1px solid blue; */
+  width: 72%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+main .lesson .lesson-content .learn .learn-main .learn-board {
+  height: 50vh;
+}
+main .lesson .lesson-content .learn .learn-main .learn-board .board-head {
+  background-color: #7e56dc;
+  border: 4px solid #8ae9e9;
+  border-bottom: 0px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+}
+main .lesson .lesson-content .learn .learn-main .learn-board .board-head h1,
+i {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+}
+main .lesson .lesson-content .learn .learn-main .learn-board .board-body {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: calc(86% - 40px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .lesson .lesson-content .learn .learn-main .learn-board .board-body h2 {
+  margin: 10px;
+}
+main .lesson .lesson-content .learn .learn-main .learn-board .board-body svg {
+  /* border: 1px solid red; */
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  height: 100%;
+}
+main
+  .lesson
+  .lesson-content
+  .learn
+  .learn-main
+  .learn-board-group
+  .learn-board-btns {
+  /* border: 1px solid pink; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+main
+  .lesson
+  .lesson-content
+  .learn
+  .learn-main
+  .learn-board-group
+  .learn-board-btns
+  button {
+  width: 80%;
+  max-width: 810px;
+}
+main .lesson .lesson-content .evaluate .evaluate-header {
+  background-color: #826cb8;
+  color: white;
+  padding: 10px;
+  align-self: center;
+  width: 70%;
+  text-align: center;
+}
+main .lesson .lesson-content .evaluate .evaluate-board {
+  height: 45%;
+  width: 100%;
+  padding: 10px;
+}
+main .lesson .lesson-content .evaluate .evaluate-board h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+main .lesson .lesson-content .evaluate .evaluate-board svg {
+  height: 100%;
+}
+main .lesson .lesson-content .evaluate .evaluate-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+main .lesson .lesson-content .evaluate .evaluate-buttons button {
+  margin: 10px 10px 10px 0;
+}
+main .lesson .lesson-content .continue .continue-card {
+  /* border: 1px solid red; */
+  height: 65%;
+  background-color: #fcf7dc;
+  box-shadow: 3px 6px 0 2px #ddcf87;
+  border-radius: 30px;
+  display: flex;
+  margin-top: 10px;
+}
+main .lesson .lesson-content .continue .continue-buttons {
+  /* border: 1px solid red; */
+  padding: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+main .lesson .lesson-content .continue .continue-buttons button:nth-child(1),
+button:nth-child(2) {
+  margin-right: 10px;
+}
+@media screen and (max-width: 913px) {
+  main .lesson .lesson-content {
+    width: 100%;
+    padding: 0 15px 20px 15px;
+  }
+  main .lesson .lesson-content .card {
+    box-shadow: 4px 8px 0 2px #00b9bc, 6px 14px #543f86;
+  }
+  main .lesson .lesson-content .learn .learn-main {
+    flex-direction: column;
+    height: 100%;
+  }
+  main .lesson .lesson-content .learn .learn-main .learn-board {
+    height: 38vh;
+  }
+  main .lesson .lesson-content .learn .learn-main .learn-list {
+    flex-direction: row;
+    width: 92%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    min-height: 30px;
+    min-width: none;
+  }
+  main .lesson .lesson-content .learn .learn-main .learn-list button {
+    margin-right: 10px;
+  }
+  main .lesson .lesson-content .learn .learn-main .learn-board-group {
+    flex-grow: 2;
+    width: 100%;
+    min-width: none;
+    justify-content: space-around;
+  }
+  main .lesson .lesson-content .evaluate .evaluate-board {
+    width: 92%;
+  }
+  main .lesson .lesson-content .continue .continue-card {
+    height: 55%;
+    margin-top: 20px;
+  }
+  main .lesson .lesson-content .continue .continue-buttons {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  main .lesson .lesson-content .continue .continue-buttons button,
+  a:link {
+    font-size: 1.5rem;
+    width: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
+footer {
+  background-color: #7d7abb;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+footer > span {
+  color: #cbc9e3;
+  font-size: small;
+}

@@ -7,16 +7,12 @@ const Header = () => {
     <header>
       <Link
         to="/"
-        // onClick={() => {
-        //   const page = document.querySelector("button[id='navmenu-home-btn']");
-        //   page.click();
-        // }}
       >
         <img src={logoUrl} alt={logoName} width={"200px"} />
       </Link>
 
       <div className="header--user-area">
-        <ul>{/* here would go list that goes right */}</ul>
+        <ul>{/* here goes login and user */}</ul>
       </div>
     </header>
   );

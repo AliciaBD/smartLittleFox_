@@ -21,7 +21,7 @@ export const useGetLessons = (url) => {
 };
 
 const LessonsCatalog = () => {
-  let url = "https://smartlittlefox-api.herokuapp.com/lessons";
+  let url = "https://smartlittlefox-server.onrender.com/lessons";
 
   const { loading, lessons } = useGetLessons(url);
 

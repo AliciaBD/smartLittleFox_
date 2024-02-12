@@ -4,7 +4,7 @@ export const useGetLesson = (lessonId) => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
 
-  const url = `https://smartlittlefox-api.herokuapp.com/lessons/${lessonId}`;
+  const url = `https://smartlittlefox-server.onrender.com/lessons/${lessonId}`;
 
   const getData = async () => {
     const response = await fetch(url);

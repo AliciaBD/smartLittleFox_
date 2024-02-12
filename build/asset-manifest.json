@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57627b1c.css",
+    "main.js": "/static/js/main.d03bdfb7.js",
+    "static/js/787.f5990660.chunk.js": "/static/js/787.f5990660.chunk.js",
+    "static/media/animalsSprite.svg": "/static/media/animalsSprite.5b0612fab491671455fe5667da6d67c4.svg",
+    "static/media/fruitsSprite.svg": "/static/media/fruitsSprite.5c11861a7a2121573cdb3666c84d3715.svg",
+    "static/media/colorsSprite.svg": "/static/media/colorsSprite.6b83d25f0cbbef69b6125f8749e1ce46.svg",
+    "static/media/mixkit-soap-bubble-sound-2925-2.mp3": "/static/media/mixkit-soap-bubble-sound-2925-2.c873823e14dc4a121903.mp3",
+    "static/media/mixkit-egg-bubble-pop-3192-2.mp3": "/static/media/mixkit-egg-bubble-pop-3192-2.0bce74e255185914f61b.mp3",
+    "index.html": "/index.html",
+    "main.57627b1c.css.map": "/static/css/main.57627b1c.css.map",
+    "main.d03bdfb7.js.map": "/static/js/main.d03bdfb7.js.map",
+    "787.f5990660.chunk.js.map": "/static/js/787.f5990660.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57627b1c.css",
+    "static/js/main.d03bdfb7.js"
+  ]
+}

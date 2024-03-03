@@ -1,9 +1,10 @@
 const Footer = () => {
-  const developer = "@licia";
   return (
     <footer>
-      <span>Design and Code by Alicia Burga. 2021.</span>
-      <li></li>
+      <span>
+    <a href="https://github.com/AliciaBD/smartLittleFox_"><FontAwesomeIcon icon="fa-brands fa-github" />AliciaBD/smartLittleFox_</a>
+           </span>
+    <li></li>
     </footer>
   );
 };
